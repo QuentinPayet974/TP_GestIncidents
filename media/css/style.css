@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body { 
+    margin: 0pt;
+    padding: 0pt;
+    /*font-family: Verdana,Arial,Helvetica,sans-serif;*/
+    font-family: Montserrat;
+    font-size: 0.8em;
+    margin:auto;
+    width:1050px;
+    background-image:url('../images/background.png');
+    background-repeat:repeat-x;  
+    background-position:center top;
+    background-attachment:fixed;
+}
+
+#global{
+    text-align: justify;
+    margin-top:25px;
+    margin-bottom:50px;
+    background-color:white;
+    float:left;
+    border: solid 2px black;
+}
+
+#entete{
+    width:100%;
+    height:100px;
+    float:left;
+    text-align: left;
+    border-bottom: solid 2px #000000;
+}
+
+#entete img {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+#entete h1 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+span.deconnexion{
+    float:right;
+    margin-right:50px;
+    margin-top:-44px;
+}
+
+section{
+    float: right;
+    margin-left: 0px;
+    display: block;
+    width: 690px;
+    border-left: solid 2px #000000;
+    margin-top:0px;
+    padding:20px;
+    min-height:440px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h1#Titreappli{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-left: 11px;
+}
+
+nav{
+    float: left;
+    width:300px;
+    float:left;
+    text-align: left;
+    margin-top:20px;
+    background-color:white;
+    
+}
+
+nav ul{
+    list-style-type: none;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+    padding-bottom: 5px;
+}
+
+li{
+    padding-left: 0px;
+    /*list-style-type: none;*/
+}
+
+nav a{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #8A3829;
+    
+}
+
+footer{
+    width:100%;
+    height:70px;
+    float:left;
+    text-align:center;
+    border-top: solid 2px #000000;
+    margin-top:0px;
+    padding-top:20px;
+}
+
+p.footer{
+    font-size:14px;
+}
+#form-switch {
+    display:none
+}
+#form-switch:checked~#register-form {
+    display:block
+}
+#form-switch:checked~#login-form {
+    display:none
+}
+
+#login-form, #register-form {
+    margin:0 auto;
+    width:400px;
+}
+
+#register-form {
+    display:none;
+}
+
+#login-form input, #register-form input
+{
+    margin-bottom:3px;
+    padding:10px;
+    width: 100%;
+    border:1px solid #CCC
+}
+#login-form button, #register-form button
+{
+    padding:10px
+}
+#login-form label, #register-form label
+{
+    cursor:pointer
+}
+
+.div-rouge {
+    background-color: red;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.div-verte {
+    background-color: green;
+}
+
+.div-orange {
+    background-color: orange;
+}
+
+/* Bordure trait en pointillés */
+hr.point {
+    border-top: 1px dashed #245EE8;
+  }
+
+/* Bordure trait Large */
+hr.large {
+    border: 10px solid #8A3829;
+    border-radius: 5px;
+  }
+
+
+#tableticket {
+	table-layout: fixed;
+	white-space:nowrap;
+	border-collapse: collapse;
+	width: 98%;
+	font-family: 'Open Sans'; font-size: 13pt; color: black; font-weight: 500;
+;
+	margin: 10px;
+}
+
+#tableticket tr {
+	height: 30px;
+}
+
+#tableticket td,th {
+	text-align: left;
+	padding-left: 8px;
+	overflow:hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+#tableticket tbody tr:hover {
+	color: white;
+	background-color: #8A3829;
+	cursor: pointer;
+}
+
+#tableticket a {
+	color: #3E3E3E;
+	text-decoration: none;
+}
+
+#tableticket th.heure {
+	width: 15%;
+}
+
+#tableticket th.statut {
+	width: 10%;
+}
+
+#tableticket th.sujet {
+	width: 50%;
+}
+
+#tableticket th.jour {
+	width: 10%;
+}
+
+#tableticket td.Ouvert {
+	color:#01D758;
+}
+
+#tableticket td.Attente {
+	color: #DFAF2C;
+}
+
+#tableticket td.Ferme {
+	color: #F7230C;
+}
+
+#tableticket td.droite {
+    text-align: right;
+    padding-right: 1%;
+}
+
+#optionbar {
+    height: 80px;
+    width: 100%;
+    background-color: #8A3829;
+    text-align-last: center;
+    padding-top: 3%;
+}
+
+#optionbar select {
+    font-family: 'Open Sans Condensed';
+	font-size: 15pt;
+	font-weight: bold;
+}
